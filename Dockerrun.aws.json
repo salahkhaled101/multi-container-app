@@ -2,26 +2,26 @@
   "AWSEBDockerrunVersion": 2,
   "containerDefinitions":[
     {
-      "name": "client",
-      "image": "salah/multi-client",
+      "name": "clientl",
+      "image": "salahkhaled101/multi-client",
       "hostname": "client",
       "essential": false
     },
     {
        "name": "server",
-       "image": "salah/multi-server",
+       "image": "salahkhaled101/multi-server",
        "hostname": "api",
        "essentail": false
     },
     {
       "name": "worker",
-      "image": "salah/multi-worker",
+      "image": "salahkhaled101/multi-worker",
       "hostname": "worker",
       "essential": false
     },
     {
       "name": "nginx",
-      "image": "salah/multi-nginx",
+      "image": "salahkhaled101/multi-nginx",
       "hostname": "nginx",
       "essential": true,
       "portMappings":[
